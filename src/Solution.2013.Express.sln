@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Windows Desktop
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buffer.Json.Toolkit", "Buffer.Json.Toolkit\Buffer.Json.Toolkit.csproj", "{4966C73A-CF75-4922-BA34-1C9024B9D3CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buffer.Json", "Buffer.Json\Buffer.Json.csproj", "{4966C73A-CF75-4922-BA34-1C9024B9D3CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buffer.Json.Engine", "Buffer.Json.Engine\Buffer.Json.Engine.csproj", "{FFF2252D-1FD5-4C5F-BED1-8BDCA4C98E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buffer.Json.Engine.Tests", "Buffer.Json.Engine.Tests\Buffer.Json.Engine.Tests.csproj", "{4BFB44FD-C50C-4AD4-BD85-9B4B6AFD9309}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{4966C73A-CF75-4922-BA34-1C9024B9D3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4966C73A-CF75-4922-BA34-1C9024B9D3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4966C73A-CF75-4922-BA34-1C9024B9D3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF2252D-1FD5-4C5F-BED1-8BDCA4C98E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF2252D-1FD5-4C5F-BED1-8BDCA4C98E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF2252D-1FD5-4C5F-BED1-8BDCA4C98E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF2252D-1FD5-4C5F-BED1-8BDCA4C98E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BFB44FD-C50C-4AD4-BD85-9B4B6AFD9309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BFB44FD-C50C-4AD4-BD85-9B4B6AFD9309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BFB44FD-C50C-4AD4-BD85-9B4B6AFD9309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BFB44FD-C50C-4AD4-BD85-9B4B6AFD9309}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

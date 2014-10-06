@@ -7,8 +7,8 @@
     <ProjectGuid>{4966C73A-CF75-4922-BA34-1C9024B9D3CE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Buffer.Json.Toolkit</RootNamespace>
-    <AssemblyName>buffer-json-toolkit</AssemblyName>
+    <RootNamespace>Buffer.Json</RootNamespace>
+    <AssemblyName>Buffer.Json</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,15 +33,37 @@
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Buffer.Json.Bootstrapper</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Processor.cs" />
-    <Compile Include="ProcessorException.cs" />
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="Handlers\BeautifyHandlerFactory.cs" />
+    <Compile Include="Handlers\CompactHandlerFactory.cs" />
+    <Compile Include="ICommand.cs" />
+    <Compile Include="IConfigurable.cs" />
+    <Compile Include="IConfigured.cs" />
+    <Compile Include="IHandlerFactory.cs" />
+    <Compile Include="IOptions.cs" />
+    <Compile Include="IParameter.cs" />
+    <Compile Include="IProgram.cs" />
+    <Compile Include="IStop.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="Parameter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stop.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Buffer.Json.Engine\Buffer.Json.Engine.csproj">
+      <Project>{fff2252d-1fd5-4c5f-bed1-8bdca4c98e72}</Project>
+      <Name>Buffer.Json.Engine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
